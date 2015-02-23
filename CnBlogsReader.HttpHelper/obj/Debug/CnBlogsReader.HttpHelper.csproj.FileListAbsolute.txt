@@ -1,0 +1,17 @@
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\bin\Debug\CnBlogsReader.HttpHelper.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\bin\Debug\CnBlogsReader.HttpHelper.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\bin\Debug\CnBlogsReader.HttpHelper.pri
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\CnBlogsReader.HttpHelper.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\CnBlogsReader.HttpHelper.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\priconfig.xml
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\priconfig.xml.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\layout.resfiles
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\layout.resfiles.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\resources.resfiles
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\resources.resfiles.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\pri.resfiles
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\pri.resfiles.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\qualifiers.txt
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\qualifiers.txt.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\CnBlogsReader.HttpHelper.csprojResolveAssemblyReference.cache

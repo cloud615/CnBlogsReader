@@ -1,0 +1,17 @@
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\bin\Debug\CnBlogsReader.DataModel.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\bin\Debug\CnBlogsReader.DataModel.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\bin\Debug\CnBlogsReader.DataModel.pri
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\CnBlogsReader.DataModel.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\CnBlogsReader.DataModel.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\priconfig.xml
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\priconfig.xml.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\layout.resfiles
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\layout.resfiles.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\resources.resfiles
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\resources.resfiles.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\pri.resfiles
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\pri.resfiles.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\qualifiers.txt
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\qualifiers.txt.intermediate
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\CnBlogsReader.DataModel.csprojResolveAssemblyReference.cache

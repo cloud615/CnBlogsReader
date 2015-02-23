@@ -1,0 +1,3 @@
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\CnBlogsReader.DataModel.csproj;neutral
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\CnBlogsReader.HttpHelper.csproj;neutral
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\CnBlogsReader.Windows.csproj;neutral

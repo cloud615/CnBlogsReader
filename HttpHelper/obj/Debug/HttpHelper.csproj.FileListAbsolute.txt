@@ -1,0 +1,10 @@
+D:\WorkStation\2015CnBlogs\HttpHelper\bin\Debug\HttpHelper.dll
+D:\WorkStation\2015CnBlogs\HttpHelper\bin\Debug\HttpHelper.pdb
+D:\WorkStation\2015CnBlogs\HttpHelper\obj\Debug\HttpHelper.csprojResolveAssemblyReference.cache
+D:\WorkStation\2015CnBlogs\HttpHelper\obj\Debug\HttpHelper.dll
+D:\WorkStation\2015CnBlogs\HttpHelper\obj\Debug\HttpHelper.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\HttpHelper\bin\Debug\HttpHelper.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\HttpHelper\bin\Debug\HttpHelper.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\HttpHelper\obj\Debug\HttpHelper.csprojResolveAssemblyReference.cache
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\HttpHelper\obj\Debug\HttpHelper.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\HttpHelper\obj\Debug\HttpHelper.pdb

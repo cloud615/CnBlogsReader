@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CLOUD915</Machine>
+    <WindowsUser>宏宇</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>5482baaa-f8de-4877-bdca-8056e4002242</PackageIdentityName>
+    <IntermediateOutputPath>D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\bin\Debug\CnBlogsReader.Windows.exe">
+      <PackagePath>CnBlogsReader.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\bin\Debug\CnBlogsReader.DataModel.dll">
+      <PackagePath>CnBlogsReader.DataModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\bin\Debug\CnBlogsReader.HttpHelper.dll">
+      <PackagePath>CnBlogsReader.HttpHelper.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\bin\Debug\CnBlogsReader.Windows.xr.xml">
+      <PackagePath>CnBlogsReader.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

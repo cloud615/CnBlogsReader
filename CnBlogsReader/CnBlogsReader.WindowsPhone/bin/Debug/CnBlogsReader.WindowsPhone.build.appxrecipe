@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CLOUD915</Machine>
+    <WindowsUser>宏宇</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>c14ac50f-d0d3-4aec-84bf-d5023f779a8e</PackageIdentityName>
+    <IntermediateOutputPath>D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.exe">
+      <PackagePath>CnBlogsReader.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\bin\Debug\CnBlogsReader.DataModel.dll">
+      <PackagePath>CnBlogsReader.DataModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\bin\Debug\CnBlogsReader.HttpHelper.dll">
+      <PackagePath>CnBlogsReader.HttpHelper.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.xr.xml">
+      <PackagePath>CnBlogsReader.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+D:\WorkStation\2015CnBlogs\pachong\pachong\bin\Debug\pachong.exe
+D:\WorkStation\2015CnBlogs\pachong\pachong\bin\Debug\pachong.pdb
+D:\WorkStation\2015CnBlogs\pachong\pachong\bin\Debug\HttpHelper.dll
+D:\WorkStation\2015CnBlogs\pachong\pachong\bin\Debug\HttpHelper.pdb
+D:\WorkStation\2015CnBlogs\pachong\pachong\obj\Debug\pachong.csprojResolveAssemblyReference.cache
+D:\WorkStation\2015CnBlogs\pachong\pachong\obj\Debug\pachong.exe
+D:\WorkStation\2015CnBlogs\pachong\pachong\obj\Debug\pachong.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\bin\Debug\pachong.exe
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\bin\Debug\pachong.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\bin\Debug\HttpHelper.dll
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\bin\Debug\HttpHelper.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\obj\Debug\pachong.csprojResolveAssemblyReference.cache
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\obj\Debug\pachong.exe
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\pachong\pachong\obj\Debug\pachong.pdb
