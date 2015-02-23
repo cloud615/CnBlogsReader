@@ -1,0 +1,136 @@
+﻿
+//******************************************************************************************************************
+// 创建者：cloud_615
+// 创建时间：2015-02-24 02：13 
+// 创建备注： 在项目开发期间，对新知识的积累
+//******************************************************************************************************************
+
+//******************************************************************************************************************
+// 更新者：cloud_615
+// 更新时间：2015-02-24 02：13 
+// 更新备注： 对INotifyPropertyChanged接口 的作用；ViewModel 的使用目的，所包含的属性的解读；
+						对ICommand接口的实现，以及界面中通过Command来整合事件绑定
+//******************************************************************************************************************
+ViewModel 本质是Model，目前看来，是一个实现了INotifyPropertyChanged接口的类：
+
+其中可定义很多属性（依赖属性）INotifyPropertyChanged接口的实现，来实现依赖关系，形成数据双向绑定的功能。
+
+        #region INotifyPropertyChanged Members（实现INotifyPropertyChanged接口 的方法）
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handler = this.PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #endregion
+
+自定义的属性，可以是基类型，也可以是自定义类型的属性
+public class RegisterUserViewModel : INotifyPropertyChanged
+{ 
+		public string UserName { get; set; }
+
+        private int age;
+        public int Age
+        {
+            get
+            {
+                return this.age;
+            }
+            set
+            {
+                if (this.age != value)
+                {
+                    this.age = value;
+                    OnPropertyChanged("Age");
+                }
+            }
+        }
+}
+上面的UserName是一个普通属性，对其修改后，不可在界面上自动更新；
+而Age是一个依赖属性，对其修改后，由于set中调用了OnPropertyChanged("Age");方法，则会自动更新到界面上。
+
+还可以定义其他的自定义类型的属性：
+		private OtherProperty otherProp=new OtherProperty();
+
+         public OtherProperty OtherProp
+        {
+            get { return this.otherProp; }
+            set
+            {
+                this.otherProp = value;
+                // 由于OtherProperty类，实现了INotifyPropertyChanged接口，
+                // 因此，此处不需要调用OnPropertyChanged方法
+                // OnPropertyChanged("OtherProp");
+            }
+        }
+
+//。。。。。。。。。。。。。。。。。
+ public class OtherProperty : INotifyPropertyChanged
+{
+	public string pName { get; set; }
+
+	private int count;
+
+	public int Count
+	{
+		get { return count; }
+		set
+		{
+			count = value;
+			OnPropertyChanged("Count");
+		}
+	}
+	...
+}
+//。。。。。。。。。
+由于自定义的类型OtherProperty同样实现了INotifyPropertyChanged接口，因此，当修改RegisterUserViewModel中的
+OtherProp属性的Count属性，同样可以自动显示到界面上。
+
+//。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+界面上，对于ViewModel对象的绑定：
+在xmal.cs中，实例化RegisterUserViewModel对象，将其赋值给this.DataContext，作为数据上下文；
+之后，可在xmal中的control中，通过Binding来绑定属性
+
+<Grid>
+        <Button Height="23" HorizontalAlignment="Left" Margin="12,0,0,72" Name="btnClick" VerticalAlignment="Bottom" Width="75" Command="{Binding ClickCommand}">Click me</Button>
+        <TextBlock Height="21" Margin="12,44,0,0" Name="textBlock1" VerticalAlignment="Top" Text="UserName:"  orizontalAlignment="Left" Width="62" />
+        <TextBlock Margin="12,93,0,0" Name="textBlock2" Height="21" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Text="Age:" />
+        <TextBlock Height="21" Margin="99,44,117,0" Name="tbUserName" Text="{Binding Path=UserName, Mode=OneTime}" VerticalAlignment="Top" />
+        <TextBlock Height="21" Margin="99,93,117,0" Name="tbAge" Text="{Binding Age}" VerticalAlignment="Top" />
+        <TextBlock Height="21"  Margin="99,142,117,0" Name="tbOPName" Text="{Binding OtherProp.PName}"  VerticalAlignment="Top" />
+        <TextBlock Margin="12,142,0,0" Name="tbOPCount" Height="21" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Text="{Binding OtherProp.Count}" />
+    </Grid>
+
+//。。。。。。。。。。。。。。。。。
+其中{Binding Path=UserName, Mode=OneTime}的方式，是数据源中普通属性的绑定，只绑定一次
+其中{Binding Age}的方式，是数据源中 实体对象的依赖属性的绑定，绑定方式为双向绑定（默认）
+其中{Binding OtherProp.Count}的方式，是数据源中 实体对象的属性的依赖属性的绑定，绑定方式为双向绑定（默认）
+
+
+//..............................
+ICommand 接口
+在界面中，使用了Command方式，绑定按钮的单击事件
+ <Button Height="23" HorizontalAlignment="Left" Margin="12,0,0,72" Name="btnClick" VerticalAlignment="Bottom" Width="75" Command="{Binding ClickCommand}">Click me</Button>
+
+ClickCommand的定义，是在ViewModel中实现的。
+先定义一个属性
+ public ICommand ClickCommand { get; set; }
+在构造函数中进行实例化，以及绑定
+ClickCommand = new DelegateCommand<object>(OnClick, arg => true);
+在ViewModel中，同时定义OnClick的实现
+		void OnClick(object obj)
+        {
+            this.Age += 1;
+            this.OtherProp.Count += 2;
+        }
+也就是对ViewModel中的属性进行修改。
+
+这样，就把Button的操作，整理进了ViewModel中，同时由于依赖属性的存在，以及界面中使用了数据绑定，
+按钮的事件也就是完全操作ViewModel对象，不会有其他类中的其他属性、参数等的干扰。
+
