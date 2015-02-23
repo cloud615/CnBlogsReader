@@ -129,8 +129,39 @@ ClickCommand = new DelegateCommand<object>(OnClick, arg => true);
             this.Age += 1;
             this.OtherProp.Count += 2;
         }
-也就是对ViewModel中的属性进行修改。
+            也就是对ViewModel中的属性进行修改。
+        
 
 这样，就把Button的操作，整理进了ViewModel中，同时由于依赖属性的存在，以及界面中使用了数据绑定，
 按钮的事件也就是完全操作ViewModel对象，不会有其他类中的其他属性、参数等的干扰。
+
+
+//******************************************************************************************************************
+// 更新者：cloud_615
+// 更新时间：2015-02-24 02：22 
+// 更新备注： 对INotifyPropertyChanged接口 的作用；ViewModel 的使用目的，所包含的属性的解读；
+//******************************************************************************************************************
+发现问题：INotifyPropertyChanged接口的实现位置是否可以调整？
+
+针对INotifyPropertyChanged接口 的实现位置理解：
+1）之前是由ViewModel来实现，但是，本该Model来定义的属性，却定义在了ViewModel中，冗余。
+2）新增一个Model，由它来实现INotifyPropertyChanged接口 ，ViewModel中只定义一个实体属性，修改时，交由Model来进行通知。
+3）新增一个Model，但由ViewModel来实现INotifyPropertyChanged接口 ，这样，会出现问题！
+	  当修改User的Age属性，确实由27变成了28，但是并没有把改变结果通知XAML。
+
+这是因为，INotifyPropertyChanged接口只监视UserInfo这个实体的地址是否发生了改变，而目前这个地址并没有变化，只是存储在UserInfo实体中的成员Age发生了改变，而Age的地址并不在INotifyPropertyChanged接口的监视之下，所以XAML中没有任何改变。
+
+看来只有修改UserInfo这个实体的地址了，最好的方法就是重新实例化一个UserInfo实体： 
+void OnClick(object obj)
+{
+	//this syntax below cannot run, so it is marked
+	//this.User.Age += 1;
+
+	this.User = new UserInfo() { UserName = this.User.UserName, Age = this.User.Age + 1 };
+}
+
+在3 中的实现，由于重新实例化了UserInfo，会消耗一些性能；
+
+结论：尽量由Model来实现INotifyPropertyChanged接口，也就是 2）中提到的方式。
+注意：千万不要让Model和ViewModel同时实现INotifyPropertyChanged接口，太消耗性能。
 
