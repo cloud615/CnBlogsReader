@@ -32,8 +32,20 @@ namespace CnBlogsReader
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            InitHomeList();
+            Initialize();
         }
+
+        public  void Initialize()
+        {
+            this.ViewModel = new MainPageViewModel();
+        }
+
+        public MainPageViewModel ViewModel
+        {
+            get { return this.DataContext as MainPageViewModel; }
+            set { this.DataContext = value; }
+        }
+
 
         /// <summary>
         /// 在此页将要在 Frame 中显示时进行调用。
@@ -50,7 +62,7 @@ namespace CnBlogsReader
             // 如果使用由某些模板提供的 NavigationHelper，
             // 则系统会为您处理该事件。
         }
-        private async void InitHomeList()
+        private void InitHomeList()
         {
             HomePageViewModel homePageDao = new HomePageViewModel();
 

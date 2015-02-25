@@ -31,7 +31,8 @@ namespace CnBlogsReader.ViewModel
             get { return _siteHomeFeed; }
             private set
             {
-                _siteHomeFeed = value; OnPropertyChanged();
+                _siteHomeFeed = value; 
+                OnPropertyChanged("SiteHomeFeed");
             }
         }
 

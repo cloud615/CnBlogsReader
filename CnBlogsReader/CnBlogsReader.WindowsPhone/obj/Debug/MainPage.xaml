@@ -17,13 +17,12 @@
         <StackPanel Grid.Row="0">
             <Button x:Name="TestGet"  Content="发送Get请求" ></Button>
         </StackPanel>
-        <ListView x:Name="feedListView" Grid.Row="1" Header="列表" FontSize="20"
-                  ItemsSource="{Binding SiteHomeFeed}">
+        <ListView x:Name="feedListView" ItemsSource="{Binding MainPageDataContent}" Grid.Row="1" Header="列表" FontSize="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel  VerticalAlignment="Top" Margin="10,0,0,0">
-                        <TextBlock Text="{Binding Title}"  TextWrapping="NoWrap"/>
-                        <TextBlock Text="{Binding ID}"  TextWrapping="NoWrap"/>
+                        <TextBlock Text="{Binding ID}"  TextWrapping="NoWrap" FontSize="15"/>
+                        <TextBlock Text="{Binding Title}"  TextWrapping="NoWrap" FontSize="15"/>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

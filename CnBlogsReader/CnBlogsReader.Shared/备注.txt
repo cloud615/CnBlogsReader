@@ -165,3 +165,22 @@ void OnClick(object obj)
 结论：尽量由Model来实现INotifyPropertyChanged接口，也就是 2）中提到的方式。
 注意：千万不要让Model和ViewModel同时实现INotifyPropertyChanged接口，太消耗性能。
 
+//******************************************************************************************************************
+// 更新者：cloud_615
+// 更新时间：2015-02-25 22：36 
+// 更新备注： 对INotifyPropertyChanged接口 的使用
+//******************************************************************************************************************
+
+1、View中的列表如ListView，数据源ItemsSource 要绑定集合（ObservableCollection<T>）对象的名称，
+如果集合象是另一个对象的属性，则要使用Person.friendList绑定，列表的数据模板中，每个控件的属性，直接绑定Model的属性名
+
+2、使用MVVM框架，来绑定列表、控件属性等，如果希望实现双向绑定或者其他方向的绑定，也就是希望某一段发生改变，
+同时会自动通知绑定的另一端，那么，一定要保证绑定的数据源是同一地址，期间不可更改。
+2.1、所谓同一地址:  绑定之前实例化的数据源对象，之后只能对其属性值/集合的话就是元素，进行修改，或增，或减，
+但不可重新实例化，也不可将其他的对象赋值给该数据源对象，如UserA=UserB、List<User> userA=userB,这都会修改地址。
+
+3、将Model中的
+1、View中的列表中每一项绑定的对象，就是需要实现INotifyPropertyChanged接口的Model，这个Model
+
+4、如果Model仅用于显示，无需修改操作，则可以不实现INotifyPropertyChanged接口; 交由集合（ObservableCollection<T>）来实现
+或者定义 其他的类，来封装Model集合(List<T>) 然后实现INotifyPropertyChanged接口，控制List数据变更后调用通知事件;
