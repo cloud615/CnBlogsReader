@@ -82,5 +82,15 @@ namespace CnBlogsReader
 
         }
 
+        /// <summary>
+        /// Hub切换触发该事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HomeHub_SectionsInViewChanged(object sender, SectionsInViewChangedEventArgs e)
+        {
+
+        }
+
     }
 }

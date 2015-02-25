@@ -7,25 +7,46 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
+    <Page.Resources>
+        
+    </Page.Resources>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
-            <Button x:Name="TestGet"  Content="发送Get请求" ></Button>
-        </StackPanel>
-        <ListView x:Name="feedListView" ItemsSource="{Binding MainPageDataContent}" Grid.Row="1" Header="列表" FontSize="20">
-            <ListView.ItemTemplate>
+        <Hub x:Name="HomeHub" SectionsInViewChanged="HomeHub_SectionsInViewChanged" >
+            <HubSection x:Uid="Blogs">
                 <DataTemplate>
-                    <StackPanel  VerticalAlignment="Top" Margin="10,0,0,0">
-                        <TextBlock Text="{Binding ID}"  TextWrapping="NoWrap" FontSize="15"/>
-                        <TextBlock Text="{Binding Title}"  TextWrapping="NoWrap" FontSize="15"/>
+                    <StackPanel>
+                        <TextBlock Text="博文" FontSize="28"/>
+                        <ListView x:Name="feedListView" ItemsSource="{Binding MainPageDataContent}" Grid.Row="1" FontSize="20">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel  VerticalAlignment="Top" Margin="10,0,0,0">
+                                        <TextBlock Text="{Binding ID}"  TextWrapping="NoWrap" FontSize="15"/>
+                                        <TextBlock Text="{Binding Title}"  TextWrapping="NoWrap" FontSize="15"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>                    
+                </DataTemplate>
+            </HubSection>
+            <HubSection x:Uid="News">
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="新闻" FontSize="28"/>
+                        <Button Content="anniu"/>
                     </StackPanel>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </HubSection>
+            <HubSection x:Uid="News">
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="推荐博文" FontSize="28"/>
+                        <Button Content="anniu"/>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        
     </Grid>
 </Page>

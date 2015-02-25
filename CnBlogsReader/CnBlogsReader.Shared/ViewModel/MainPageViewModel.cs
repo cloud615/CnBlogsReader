@@ -39,6 +39,7 @@ namespace CnBlogsReader.ViewModel
             }
         }
         public ObservableCollection<Blogger> MainPageDataContent { get; set; }
+
         //private ObservableCollection<Blogger> _mainPageDataContent;
         //public ObservableCollection<Blogger> MainPageDataContent
         //{
