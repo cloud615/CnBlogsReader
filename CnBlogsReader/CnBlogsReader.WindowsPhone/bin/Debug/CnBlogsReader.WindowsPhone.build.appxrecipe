@@ -25,6 +25,9 @@
     <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\bin\Debug\CnBlogsReader.HttpHelper.dll">
       <PackagePath>CnBlogsReader.HttpHelper.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\Logo.100.Blue.png">
+      <PackagePath>Assets\Logo.100.Blue.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -57,6 +60,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\TestControlPage.xbf">
+      <PackagePath>TestControlPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\WindowsPhoneControls\BlogsListControl.xbf">
+      <PackagePath>WindowsPhoneControls\BlogsListControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.xr.xml">
       <PackagePath>CnBlogsReader.WindowsPhone.xr.xml</PackagePath>

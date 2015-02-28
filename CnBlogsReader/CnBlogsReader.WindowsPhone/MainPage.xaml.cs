@@ -31,11 +31,11 @@ namespace CnBlogsReader
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
-            Initialize();
+            Initialize();   
         }
 
-        public  void Initialize()
+
+        public void Initialize()
         {
             this.ViewModel = new MainPageViewModel();
         }
@@ -45,6 +45,8 @@ namespace CnBlogsReader
             get { return this.DataContext as MainPageViewModel; }
             set { this.DataContext = value; }
         }
+
+       
 
 
         /// <summary>

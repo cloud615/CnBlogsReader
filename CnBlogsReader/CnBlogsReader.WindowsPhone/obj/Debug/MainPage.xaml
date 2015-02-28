@@ -5,6 +5,7 @@
     xmlns:local="using:CnBlogsReader"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:localUserControls="using:CnBlogsReader.WindowsPhoneControls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
@@ -14,20 +15,8 @@
     <Grid>
         <Hub x:ConnectionId='1' x:Name="HomeHub"                                                       >
             <HubSection x:Uid="Blogs">
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="博文" FontSize="28"/>
-                        <ListView x:Name="feedListView" ItemsSource="{Binding MainPageDataContent}" Grid.Row="1" FontSize="20">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel  VerticalAlignment="Top" Margin="10,0,0,0">
-                                        <TextBlock Text="{Binding ID}"  TextWrapping="NoWrap" FontSize="15"/>
-                                        <TextBlock Text="{Binding Title}"  TextWrapping="NoWrap" FontSize="15"/>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </StackPanel>                    
+                <DataTemplate>                   
+                        <localUserControls:BlogsListControl x:Name="bloglist"/>
                 </DataTemplate>
             </HubSection>
             <HubSection x:Uid="News">

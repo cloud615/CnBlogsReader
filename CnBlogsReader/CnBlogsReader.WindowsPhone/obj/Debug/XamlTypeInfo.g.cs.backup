@@ -124,19 +124,25 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
-            _typeNameTable[0] = "CnBlogsReader.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "CnBlogsReader.ViewModel.MainPageViewModel";
-            _typeNameTable[4] = "Object";
+            _typeNameTable = new string[8];
+            _typeNameTable[0] = "CnBlogsReader.WindowsPhoneControls.BlogsListControl";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "CnBlogsReader.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "CnBlogsReader.ViewModel.MainPageViewModel";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "CnBlogsReader.TestControlPage";
+            _typeNameTable[7] = "CnBlogsReader.Converters.ImageConverter";
 
-            _typeTable = new global::System.Type[5];
-            _typeTable[0] = typeof(global::CnBlogsReader.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::CnBlogsReader.ViewModel.MainPageViewModel);
-            _typeTable[4] = typeof(global::System.Object);
+            _typeTable = new global::System.Type[8];
+            _typeTable[0] = typeof(global::CnBlogsReader.WindowsPhoneControls.BlogsListControl);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::CnBlogsReader.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::CnBlogsReader.ViewModel.MainPageViewModel);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::CnBlogsReader.TestControlPage);
+            _typeTable[7] = typeof(global::CnBlogsReader.Converters.ImageConverter);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -171,8 +177,11 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::CnBlogsReader.MainPage(); }
-        private object Activate_3_MainPageViewModel() { return new global::CnBlogsReader.ViewModel.MainPageViewModel(); }
+        private object Activate_0_BlogsListControl() { return new global::CnBlogsReader.WindowsPhoneControls.BlogsListControl(); }
+        private object Activate_2_MainPage() { return new global::CnBlogsReader.MainPage(); }
+        private object Activate_4_MainPageViewModel() { return new global::CnBlogsReader.ViewModel.MainPageViewModel(); }
+        private object Activate_6_TestControlPage() { return new global::CnBlogsReader.TestControlPage(); }
+        private object Activate_7_ImageConverter() { return new global::CnBlogsReader.Converters.ImageConverter(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -184,31 +193,52 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  CnBlogsReader.MainPage
+            case 0:   //  CnBlogsReader.WindowsPhoneControls.BlogsListControl
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_BlogsListControl;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  CnBlogsReader.MainPage
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_2_MainPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 3:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  CnBlogsReader.ViewModel.MainPageViewModel
+            case 4:   //  CnBlogsReader.ViewModel.MainPageViewModel
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Object
+            case 5:   //  Object
                 xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  CnBlogsReader.TestControlPage
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_TestControlPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  CnBlogsReader.Converters.ImageConverter
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_7_ImageConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

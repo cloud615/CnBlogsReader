@@ -25,9 +25,9 @@ namespace CnBlogsReader.ViewModel
             RequestHelper requestHelper = new RequestHelper();
             var requestURL = ConfigurationArgument.RequestURLMainPage.Replace("{pageIndex}", "1").Replace("{pageSize}", "10");
 
-            if (MainPageDataContent == null)
+            if (BlogListDataContent == null)
             {
-                MainPageDataContent = new ObservableCollection<Blogger>();
+                BlogListDataContent = new ObservableCollection<Blogger>();
             }
             var responseString = await requestHelper.HttpGet(requestURL);
 
@@ -35,10 +35,12 @@ namespace CnBlogsReader.ViewModel
 
             foreach (var entry in entries)
             {
-                this.MainPageDataContent.Add(entry);
+                this.BlogListDataContent.Add(entry);
             }
         }
-        public ObservableCollection<Blogger> MainPageDataContent { get; set; }
+        public ObservableCollection<Blogger> BlogListDataContent { get; set; }
+
+
 
         //private ObservableCollection<Blogger> _mainPageDataContent;
         //public ObservableCollection<Blogger> MainPageDataContent

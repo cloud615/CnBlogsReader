@@ -38,3 +38,13 @@ D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windo
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.DataModel.dll
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.DataModel.pdb
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.DataModel.pri
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\TestControlPage.g.i.cs
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\TestControlPage.g.cs
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\WindowsPhoneControls\BlogsListControl.g.i.cs
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\WindowsPhoneControls\BlogsListControl.g.cs
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\TestControlPage.xaml
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\TestControlPage.xbf
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\TestControlPage.xbf
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\WindowsPhoneControls\BlogsListControl.xbf
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\WindowsPhoneControls\BlogsListControl.xaml
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\WindowsPhoneControls\BlogsListControl.xbf

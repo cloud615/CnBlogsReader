@@ -98,6 +98,9 @@
     <Compile Include="TestControlPage.xaml.cs">
       <DependentUpon>TestControlPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowsPhoneControls\BlogsListControl.xaml.cs">
+      <DependentUpon>BlogsListControl.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -105,6 +108,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Logo.100.Blue.png" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
@@ -118,6 +122,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="TestControlPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowsPhoneControls\BlogsListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

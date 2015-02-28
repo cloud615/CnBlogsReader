@@ -16,6 +16,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Commom\NotifyPropertyBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\ImageConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NotifyTaskCompletion.cs" />

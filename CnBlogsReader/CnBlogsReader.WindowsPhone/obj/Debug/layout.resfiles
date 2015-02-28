@@ -1,4 +1,5 @@
 备注.txt
+Assets\Logo.100.Blue.png
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
@@ -8,3 +9,5 @@ Assets\WideLogo.scale-240.png
 App.xbf
 CnBlogsReader.WindowsPhone.xr.xml
 MainPage.xbf
+TestControlPage.xbf
+WindowsPhoneControls\BlogsListControl.xbf

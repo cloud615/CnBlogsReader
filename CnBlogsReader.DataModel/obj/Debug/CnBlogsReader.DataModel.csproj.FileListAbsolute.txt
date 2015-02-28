@@ -14,4 +14,3 @@ D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\qualifiers.txt
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\qualifiers.txt.intermediate
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.DataModel\obj\Debug\CnBlogsReader.DataModel.csprojResolveAssemblyReference.cache

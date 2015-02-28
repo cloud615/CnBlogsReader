@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace CnBlogsReader.DataModel.ContentModel
 {
@@ -11,5 +12,6 @@ namespace CnBlogsReader.DataModel.ContentModel
     {
         [XmlAttribute("href")]
         public string Href { get; set; }
+
     }
 }
