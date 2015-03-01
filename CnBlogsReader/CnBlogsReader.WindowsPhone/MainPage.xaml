@@ -15,8 +15,8 @@
     <Grid>
         <Hub x:Name="HomeHub" SectionsInViewChanged="HomeHub_SectionsInViewChanged" >
             <HubSection x:Uid="Blogs">
-                <DataTemplate>                   
-                        <localUserControls:BlogsListControl x:Name="bloglist"/>
+                <DataTemplate>
+                    <localUserControls:BlogsListControl x:Name="bloglist"  BlogListSource="{Binding BlogListDataContent}" />
                 </DataTemplate>
             </HubSection>
             <HubSection x:Uid="News">

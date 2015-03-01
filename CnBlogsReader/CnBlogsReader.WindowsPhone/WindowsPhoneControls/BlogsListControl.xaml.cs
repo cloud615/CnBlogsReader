@@ -1,6 +1,8 @@
-﻿using CnBlogsReader.ViewModel;
+﻿using CnBlogsReader.DataModel.ContentModel;
+using CnBlogsReader.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,5 +27,19 @@ namespace CnBlogsReader.WindowsPhoneControls
             this.InitializeComponent();
             
         }
+
+
+
+        public System.Collections.ObjectModel.ObservableCollection<Blogger> BlogListSource
+        {
+            get { return (ObservableCollection<Blogger>)GetValue(BlogListSourceProperty); }
+            set { SetValue(BlogListSourceProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for BlogListSource.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty BlogListSourceProperty =
+            DependencyProperty.Register("BlogListSource", typeof(System.Collections.ObjectModel.ObservableCollection<Blogger>), typeof(BlogsListControl), new PropertyMetadata(new ObservableCollection<Blogger>()));
+
+
     }
 }

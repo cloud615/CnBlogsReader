@@ -5,6 +5,7 @@
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="BlogListDataContent" />
+    <RootPropertyPathName Name="BlogListSource" />
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="ID" />
   </Roots.PropertyPathNames>
@@ -51,10 +52,17 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="CnBlogsReader.WindowsPhoneControls.BlogsListControl" />
+    <RootType FullName="CnBlogsReader.WindowsPhoneControls.BlogsListControl">
+      <RootProperty Name="BlogListSource" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Path" />
+    </RootType>
     <RootType FullName="CnBlogsReader.MainPage" />
     <RootType FullName="CnBlogsReader.TestControlPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Name" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
     </RootType>
@@ -69,7 +77,6 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
