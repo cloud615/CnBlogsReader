@@ -195,7 +195,8 @@ void OnClick(object obj)
 1、将 blog列表整理到了 用户控件 中，WindowsPhoneControls/BlogsListControl.xaml
 2、使用了Converter，转换器，将图片的url转为BitmapImage对象，但是还不能显示图片，待解决！！！！！
 3、使用了ScrollViewer控件，将ListView包裹了一下，实现了 上下滑动效果
-4、用户控件中的数据源，使用了主页面中的DataContent中的属性，在用户控件中绑定了数据源（此处可以考虑定义一个依赖属性，在主页面使用该用户控件时，定义一个数据源的绑定，然后用依赖属性赋值给用户控件，达到数据绑定效果）
+4、用户控件中的数据源，使用了主页面中的DataContent中的属性，在用户控件中绑定了数据源（此处可以考虑定义一个依赖属性，
+在主页面使用该用户控件时，定义一个数据源的绑定，然后用依赖属性赋值给用户控件，达到数据绑定效果）
 
 //******************************************************************************************************************
 // 更新者：cloud_615
@@ -204,4 +205,38 @@ void OnClick(object obj)
 //******************************************************************************************************************
 1、使用了Converter，转换器，将图片的url转为BitmapImage对象，但是还不能显示图片，待解决！！！！！
 2、依赖属性+用户控件+数据绑定，独立出用户控件的数据源，在使用用户控件时，显示传递绑定数据源：
-	先给用户控件 定义名称，如<UserControl  Name="ucBlogsList" ,之后给列表或其他控件绑定数据源时，如 ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource}"； 其中，ElementName 就是UserControl的Name，Path指xaml.cs中定义的依赖属性
+	先给用户控件 定义名称，如<UserControl  Name="ucBlogsList" ,之后给列表或其他控件绑定数据源时，
+	如 ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource}"； 
+	其中，ElementName 就是UserControl的Name，Path指xaml.cs中定义的依赖属性
+	
+3、下次，先解决 下拉后加载新数据，填充进集合中！！！！！！！
+
+
+//******************************************************************************************************************
+// 更新者：cloud_615
+// 更新时间：2015-03-02 22:42:48
+// 更新备注： 对bloggerList用户控件的列表 做了更新功能，滑动到底部，会添加新的数据
+//******************************************************************************************************************
+
+1、滑动到底部，更新数据，实现思路:
+	1.1、用户控件的之前，是将ScrollViewer封装进去的，现在，将ScrollViewer放到引用页面（MainPage）；
+	1.2、用户控件中 ListVIew的数据绑定，添加属性：
+	<ListView x:Name="feedListView" ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource,UpdateSourceTrigger=PropertyChanged}" .../>
+	 UpdateSourceTrigger 的用处是，数据源更新的触发条件是 绑定属性发生变化。
+	1.3、由于使用了依赖属性作为数据源，因此，当MainPage中的绑定用的数据集合的发生改变时，就会通知用户控件中的数据源进行更新。
+	1.4、接下来就是 要解决 ，可是让 MainPage中的数据集合发生改变
+	1.5、在1.1中，我将ScrollViewer放到引用页面（MainPage）中了，就是为了监控ScrollViewer滑动到底部，当滑动到底部时，将更新数据源
+	1.6、ScrollViewer的ViewChanged事件，可以获取 ScrollViewer的多个高度属性，
+	其中，scrollableHeight 高度不变（应该是 随内部ListView的高度变化）, verticalOffset 根据滑动的位置变化（主键增大）
+	1.7、当obj.ScrollableHeight - obj.VerticalOffset == 0 时，就是滑动到了底部。
+	1.8、此时执行更新数据源操作。
+					lock (lockObj)// 加锁，保证线程安全
+                    {
+                        if (!isLoading)// 判断是否正在加载，因为数据获取是异步的，有可能当前代码段执行完毕，数据并未获取完
+                        {
+                            isLoading = true;
+                            mainPageVM.LoadNewData(ChangedIsLoading);         //传递委托，在async/await 执行完毕后，用来改变 isLoading的值，           
+                        }
+                    }
+2、 加载过程中，最好有动画提示
+3、将ScrollViewer的事件绑定，移到ViewModel中，解决如何 指定不同名称的事件的Command绑定方式

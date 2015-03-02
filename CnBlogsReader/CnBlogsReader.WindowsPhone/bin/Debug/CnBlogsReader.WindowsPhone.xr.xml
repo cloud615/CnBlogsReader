@@ -52,12 +52,19 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+      <RootEvent Name="ViewChanged" />
+      <RootMethod Name="GetIsVerticalRailEnabled" />
+      <RootMethod Name="SetIsVerticalRailEnabled" />
+    </RootType>
     <RootType FullName="CnBlogsReader.WindowsPhoneControls.BlogsListControl">
       <RootProperty Name="BlogListSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="ElementName" />
       <RootProperty Name="Path" />
+      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="CnBlogsReader.MainPage" />
     <RootType FullName="CnBlogsReader.TestControlPage" />
@@ -67,11 +74,6 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="CnBlogsReader.Converters.ImageConverter" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
-      <RootProperty Name="Content" />
-      <RootMethod Name="GetIsVerticalRailEnabled" />
-      <RootMethod Name="SetIsVerticalRailEnabled" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="FontSize" />

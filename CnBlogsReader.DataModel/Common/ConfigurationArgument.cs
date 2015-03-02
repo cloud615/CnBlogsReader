@@ -9,5 +9,6 @@ namespace CnBlogsReader.DataModel.Common
     public static class ConfigurationArgument
     {
         public static readonly string RequestURLMainPage = "http://wcf.open.cnblogs.com/blog/sitehome/paged/{pageIndex}/{pageSize}";
+
     }
 }

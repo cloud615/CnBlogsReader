@@ -12,18 +12,21 @@ using System.Threading.Tasks;
 
 namespace CnBlogsReader.ViewModel
 {
-    public class MainPageViewModel 
+    public class MainPageViewModel
     {
+        private int pageIndex = 0;
+        private const string PAGESIZE = "10";
         public MainPageViewModel()
         {
             // 取出首页数据
-            Initializer();
+            Initializer(null);
         }
 
-        private async void Initializer()
+        private async void Initializer(CallbackFunction callbackFun)
         {
             RequestHelper requestHelper = new RequestHelper();
-            var requestURL = ConfigurationArgument.RequestURLMainPage.Replace("{pageIndex}", "1").Replace("{pageSize}", "10");
+            pageIndex++;
+            var requestURL = ConfigurationArgument.RequestURLMainPage.Replace("{pageIndex}", pageIndex.ToString()).Replace("{pageSize}", PAGESIZE);
 
             if (BlogListDataContent == null)
             {
@@ -35,7 +38,12 @@ namespace CnBlogsReader.ViewModel
 
             foreach (var entry in entries)
             {
-                this.BlogListDataContent.Add(entry);
+                this.BlogListDataContent.Add(entry); 
+            }
+
+            if (callbackFun != null)
+            {
+                callbackFun.Invoke();
             }
         }
         public ObservableCollection<Blogger> BlogListDataContent { get; set; }
@@ -75,6 +83,11 @@ namespace CnBlogsReader.ViewModel
         //    }
         //}
 
+        public delegate void CallbackFunction();
 
+        internal void LoadNewData(CallbackFunction callbackFun)
+        {
+            Initializer(callbackFun);
+        }
     }
 }

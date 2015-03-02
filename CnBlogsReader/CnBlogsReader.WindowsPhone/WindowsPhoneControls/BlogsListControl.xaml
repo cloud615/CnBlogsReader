@@ -12,10 +12,10 @@
     <UserControl.Resources>
         <valueConverter:ImageConverter  x:Key="imageConverter"/>
     </UserControl.Resources>
-    <ScrollViewer>
+    
         <StackPanel>
             <TextBlock Text="博文" FontSize="28" Margin="0,10"/>
-            <ListView x:Name="feedListView" ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource}" Grid.Row="1" FontSize="20" ScrollViewer.IsVerticalRailEnabled="True">
+            <ListView x:Name="feedListView" ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource,UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" FontSize="20" ScrollViewer.IsVerticalRailEnabled="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid VerticalAlignment="Top" Margin="10,0,0,0" Height="80">
@@ -36,5 +36,4 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackPanel>
-    </ScrollViewer>
 </UserControl>

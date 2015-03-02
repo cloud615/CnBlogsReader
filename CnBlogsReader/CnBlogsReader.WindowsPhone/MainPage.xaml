@@ -14,9 +14,11 @@
     </Page.Resources>
     <Grid>
         <Hub x:Name="HomeHub" SectionsInViewChanged="HomeHub_SectionsInViewChanged" >
-            <HubSection x:Uid="Blogs">
+            <HubSection x:Uid="Blogs" >
                 <DataTemplate>
-                    <localUserControls:BlogsListControl x:Name="bloglist"  BlogListSource="{Binding BlogListDataContent}" />
+                    <ScrollViewer ViewChanged="ScrollViewer_ViewChanged" >
+                        <localUserControls:BlogsListControl x:Name="bloglist"  BlogListSource="{Binding BlogListDataContent}" />
+                    </ScrollViewer>                    
                 </DataTemplate>
             </HubSection>
             <HubSection x:Uid="News">

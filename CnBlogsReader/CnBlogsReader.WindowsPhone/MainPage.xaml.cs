@@ -31,7 +31,7 @@ namespace CnBlogsReader
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            Initialize();   
+            Initialize();
         }
 
 
@@ -46,7 +46,7 @@ namespace CnBlogsReader
             set { this.DataContext = value; }
         }
 
-       
+
 
 
         /// <summary>
@@ -92,6 +92,35 @@ namespace CnBlogsReader
         private void HomeHub_SectionsInViewChanged(object sender, SectionsInViewChangedEventArgs e)
         {
 
+        }
+        public bool isLoading = false;
+        public object lockObj = new object();
+        
+
+        private void ChangedIsLoading()
+        {
+            isLoading = !isLoading;
+        }
+
+        private void ScrollViewer_ViewChanged(object sender, ScrollViewerViewChangedEventArgs e)
+        {
+            var obj = sender as ScrollViewer;
+            //scrollableHeight 高度不变, verticalOffset 根据滑动变化
+            if (obj.ScrollableHeight - obj.VerticalOffset == 0)
+            {
+                MainPageViewModel mainPageVM = this.DataContext as MainPageViewModel;
+                if (mainPageVM != null)
+                {
+                    lock (lockObj)
+                    {
+                        if (!isLoading)
+                        {
+                            isLoading = true;
+                            mainPageVM.LoadNewData(ChangedIsLoading);                           
+                        }
+                    }
+                }
+            }
         }
 
     }
