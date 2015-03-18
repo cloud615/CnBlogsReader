@@ -14,4 +14,3 @@ D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debu
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\qualifiers.txt
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\qualifiers.txt.intermediate
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader.HttpHelper\obj\Debug\CnBlogsReader.HttpHelper.csprojResolveAssemblyReference.cache

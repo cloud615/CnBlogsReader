@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\workstation\2015cnblogsreader\cnblogsreader\cnblogsreader\cnblogsreader.windowsphone\obj\debug\intermediatexaml\cnblogsreader.windowsphone.exe" HashGuid="f80cd3bd-6490-be90-5dc2-3bf438552cb2" />
-    <ReferenceAssembly PathName="d:\workstation\2015cnblogsreader\cnblogsreader\cnblogsreader.datamodel\bin\debug\cnblogsreader.datamodel.dll" HashGuid="27b5fe03-7fb3-bf8f-b80f-f508f301f5bd" />
+    <LocalAssembly PathName="d:\workstation\2015cnblogsreader\cnblogsreader\cnblogsreader\cnblogsreader.windowsphone\obj\debug\intermediatexaml\cnblogsreader.windowsphone.exe" HashGuid="0f60fa93-9e3b-2cd9-b9af-694906c3bd18" />
+    <ReferenceAssembly PathName="d:\workstation\2015cnblogsreader\cnblogsreader\cnblogsreader.datamodel\bin\debug\cnblogsreader.datamodel.dll" HashGuid="4cd569c2-d816-61a0-8690-e977a915e257" />
     <ReferenceAssembly PathName="d:\workstation\2015cnblogsreader\cnblogsreader\cnblogsreader.httphelper\bin\debug\cnblogsreader.httphelper.dll" HashGuid="a944fdf7-9f39-af06-2252-97597d389949" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

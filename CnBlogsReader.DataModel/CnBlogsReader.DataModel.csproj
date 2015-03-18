@@ -44,6 +44,8 @@
     <Compile Include="Common\ConfigurationArgument.cs" />
     <Compile Include="Common\Functions.cs" />
     <Compile Include="Common\NotifyPropertyBase.cs" />
+    <Compile Include="ContentModel\Author.cs" />
+    <Compile Include="ContentModel\BlogDetailModel.cs" />
     <Compile Include="ContentModel\Blogger.cs" />
     <Compile Include="ContentModel\Feed.cs" />
     <Compile Include="ContentModel\Link.cs" />

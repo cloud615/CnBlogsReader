@@ -9,6 +9,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -63,6 +65,37 @@ namespace CnBlogsReader
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed 事件。
             // 如果使用由某些模板提供的 NavigationHelper，
             // 则系统会为您处理该事件。
+
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+        }      
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
+        }
+
+        async private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        {
+            e.Handled = true;
+
+            if (!Frame.CanGoBack)
+            {
+                var dig = new MessageDialog("你确定要离开吗?", "提示");
+                var btnOk = new UICommand("是");
+                dig.Commands.Add(btnOk);
+                var btnCancel = new UICommand("否");
+                dig.Commands.Add(btnCancel);
+
+                var result = await dig.ShowAsync();
+                if (null != result && result.Label == "是")
+                {
+                    Application.Current.Exit();
+                }
+            }
+            else
+            {
+                Frame.GoBack();
+            }
         }
         private void InitHomeList()
         {
@@ -95,7 +128,7 @@ namespace CnBlogsReader
         }
         public bool isLoading = false;
         public object lockObj = new object();
-        
+
 
         private void ChangedIsLoading()
         {
@@ -106,7 +139,7 @@ namespace CnBlogsReader
         {
             var obj = sender as ScrollViewer;
             //scrollableHeight 高度不变, verticalOffset 根据滑动变化
-            if (obj.ScrollableHeight - obj.VerticalOffset == 0)
+            if (obj.ScrollableHeight - obj.VerticalOffset ==0)
             {
                 MainPageViewModel mainPageVM = this.DataContext as MainPageViewModel;
                 if (mainPageVM != null)
@@ -116,7 +149,7 @@ namespace CnBlogsReader
                         if (!isLoading)
                         {
                             isLoading = true;
-                            mainPageVM.LoadNewData(ChangedIsLoading);                           
+                            mainPageVM.LoadNewData(ChangedIsLoading);
                         }
                     }
                 }

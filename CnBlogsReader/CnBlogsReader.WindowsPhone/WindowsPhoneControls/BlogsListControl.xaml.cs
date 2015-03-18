@@ -25,7 +25,7 @@ namespace CnBlogsReader.WindowsPhoneControls
         public BlogsListControl()
         {
             this.InitializeComponent();
-            
+
         }
 
 
@@ -39,6 +39,22 @@ namespace CnBlogsReader.WindowsPhoneControls
         // Using a DependencyProperty as the backing store for BlogListSource.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty BlogListSourceProperty =
             DependencyProperty.Register("BlogListSource", typeof(System.Collections.ObjectModel.ObservableCollection<Blogger>), typeof(BlogsListControl), new PropertyMetadata(new ObservableCollection<Blogger>()));
+
+        private void feedListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var list = e.AddedItems;
+            if (list.Count > 0)
+            {
+                Blogger item = list[0] as Blogger;
+                if (item != null)
+                {
+                    var contenHref = item.ID;
+                    Frame rootFrame = Window.Current.Content as Frame;
+                    rootFrame.Navigate(typeof(BlogDeatil), contenHref);
+                }
+            }
+
+        }
 
 
     }

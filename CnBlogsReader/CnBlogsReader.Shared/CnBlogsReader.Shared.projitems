@@ -18,13 +18,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Commom\DelegateCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Commom\NotifyPropertyBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\ImageConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BlogDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NotifyTaskCompletion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SiteHomeFeedViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)DataModel\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)备注.txt" />

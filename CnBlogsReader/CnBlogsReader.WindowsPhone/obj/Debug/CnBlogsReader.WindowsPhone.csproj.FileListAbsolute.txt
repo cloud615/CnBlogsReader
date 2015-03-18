@@ -1,8 +1,5 @@
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\App.xbf
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\MainPage.xbf
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.xr.xml
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.exe
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.pdb
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\resources.pri
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\AppxManifest.xml
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.build.appxrecipe
@@ -16,8 +13,6 @@ D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windo
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\App.xbf
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\MainPage.xbf
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\CnBlogsReader.WindowsPhone.exe
-D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\CnBlogsReader.WindowsPhone.pdb
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\priconfig.xml
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\priconfig.xml.intermediate
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\layout.resfiles
@@ -48,3 +43,13 @@ D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.Windo
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\WindowsPhoneControls\BlogsListControl.xbf
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\WindowsPhoneControls\BlogsListControl.xaml
 D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\WindowsPhoneControls\BlogsListControl.xbf
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.xr.xml
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.exe
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\CnBlogsReader.WindowsPhone.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\CnBlogsReader.WindowsPhone.exe
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\CnBlogsReader.WindowsPhone.pdb
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\bin\Debug\BlogDeatil.xbf
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\BlogDeatil.g.i.cs
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\BlogDeatil.g.cs
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\BlogDeatil.xaml
+D:\WorkStation\2015CnBlogsReader\CnBlogsReader\CnBlogsReader\CnBlogsReader.WindowsPhone\obj\Debug\BlogDeatil.xbf

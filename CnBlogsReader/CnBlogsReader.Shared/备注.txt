@@ -240,3 +240,25 @@ void OnClick(object obj)
                     }
 2、 加载过程中，最好有动画提示
 3、将ScrollViewer的事件绑定，移到ViewModel中，解决如何 指定不同名称的事件的Command绑定方式
+
+
+//******************************************************************************************************************
+// 更新者：cloud_615
+// 更新时间：2015-03-18 21:54:54
+// 更新备注： 处理ListView显示图片的问题、详细页面处理
+//******************************************************************************************************************
+
+1、这两个星期忙着面试和手里工作，一直没时间顾得上这个项目
+2、先处理图片无法显示的问题：
+	2.1、是加载数据源转换为实体类时，没有将作者的信息正确转换为实体类的属性
+	2.2、在原Blogger类的基础上，删除public string Avatar { get; set; }，替换为
+				[XmlElement("author")]
+				public Author Author { get; set; }
+	2.3、Author类中包含作者信息：姓名、主页链接、头像连接；再次转换后得到了头像链接
+	2.4、修改了<image  Source="{Binding Author.Avatar, Converter={StaticResource imageConverter},Mode=OneWay}"...
+			将绑定的对象修改为Author.Avatar。
+	2.5、image控件绑定数据时，使用了转换器Converter，在imageConverter中，将图片的链接，转换为
+			BitmapImage bitmapImage = new BitmapImage(uri); return bitmapImage; 实现了图片显示。
+3、处理点击列表，显示详细信息页面：正确跳转，数据获取成功，绑定数据源成功
+4、获得的详细信息是HTML格式的，需要找到方法正确显示。！！！！！！！！！
+

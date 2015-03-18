@@ -15,7 +15,7 @@
     
         <StackPanel>
             <TextBlock Text="博文" FontSize="28" Margin="0,10"/>
-            <ListView x:Name="feedListView" ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource,UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" FontSize="20" ScrollViewer.IsVerticalRailEnabled="True">
+            <ListView x:Name="feedListView" ItemsSource="{Binding ElementName=ucBlogsList, Path=BlogListSource,UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" FontSize="20" ScrollViewer.IsVerticalRailEnabled="True" SelectionChanged="feedListView_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid VerticalAlignment="Top" Margin="10,0,0,0" Height="80">
@@ -24,16 +24,16 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" >
-                                <!--<Image  Source="{Binding Link.Href, Converter={StaticResource imageConverter},Mode=OneWay}" />-->
-                                <Image Source="ms-appx:///Assets/Logo.100.Blue.png" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.6" />
+                            <Image Width="50" Height="50"  Source="{Binding Author.Avatar, Converter={StaticResource imageConverter},Mode=OneWay}" />
+                                <!--<Image Source="ms-appx:///Assets/Logo.100.Blue.png" Width="50" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.6" />-->
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="5">
-                                <TextBlock Text="{Binding ID}"  TextWrapping="Wrap" FontSize="15" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding ID}"  TextWrapping="Wrap" FontSize="15" Visibility="Collapsed"/>                                
                                 <TextBlock Text="{Binding Title}"  TextWrapping="Wrap" FontSize="15"/>
                             </StackPanel>
                         </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+                    </DataTemplate>                    
+                </ListView.ItemTemplate >                
             </ListView>
         </StackPanel>
 </UserControl>

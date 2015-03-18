@@ -124,39 +124,45 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
-            _typeNameTable[0] = "CnBlogsReader.WindowsPhoneControls.BlogsListControl";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[2] = "System.Collections.ObjectModel.ObservableCollection`1<CnBlogsReader.DataModel.ContentModel.Blogger>";
-            _typeNameTable[3] = "System.Collections.ObjectModel.Collection`1<CnBlogsReader.DataModel.ContentModel.Blogger>";
+            _typeNameTable = new string[18];
+            _typeNameTable[0] = "CnBlogsReader.BlogDeatil";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "CnBlogsReader.ViewModel.BlogDetailViewModel";
             _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "CnBlogsReader.DataModel.ContentModel.Blogger";
-            _typeNameTable[6] = "String";
-            _typeNameTable[7] = "CnBlogsReader.DataModel.ContentModel.Link";
-            _typeNameTable[8] = "System.DateTime";
-            _typeNameTable[9] = "System.ValueType";
-            _typeNameTable[10] = "CnBlogsReader.MainPage";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[12] = "CnBlogsReader.ViewModel.MainPageViewModel";
-            _typeNameTable[13] = "CnBlogsReader.TestControlPage";
-            _typeNameTable[14] = "CnBlogsReader.Converters.ImageConverter";
+            _typeNameTable[5] = "CnBlogsReader.WindowsPhoneControls.BlogsListControl";
+            _typeNameTable[6] = "System.Collections.ObjectModel.ObservableCollection`1<CnBlogsReader.DataModel.ContentModel.Blogger>";
+            _typeNameTable[7] = "System.Collections.ObjectModel.Collection`1<CnBlogsReader.DataModel.ContentModel.Blogger>";
+            _typeNameTable[8] = "CnBlogsReader.DataModel.ContentModel.Blogger";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "CnBlogsReader.DataModel.ContentModel.Link";
+            _typeNameTable[11] = "CnBlogsReader.DataModel.ContentModel.Author";
+            _typeNameTable[12] = "System.DateTime";
+            _typeNameTable[13] = "System.ValueType";
+            _typeNameTable[14] = "CnBlogsReader.MainPage";
+            _typeNameTable[15] = "CnBlogsReader.ViewModel.MainPageViewModel";
+            _typeNameTable[16] = "CnBlogsReader.TestControlPage";
+            _typeNameTable[17] = "CnBlogsReader.Converters.ImageConverter";
 
-            _typeTable = new global::System.Type[15];
-            _typeTable[0] = typeof(global::CnBlogsReader.WindowsPhoneControls.BlogsListControl);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[2] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>);
-            _typeTable[3] = typeof(global::System.Collections.ObjectModel.Collection<global::CnBlogsReader.DataModel.ContentModel.Blogger>);
+            _typeTable = new global::System.Type[18];
+            _typeTable[0] = typeof(global::CnBlogsReader.BlogDeatil);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::CnBlogsReader.ViewModel.BlogDetailViewModel);
             _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::CnBlogsReader.DataModel.ContentModel.Blogger);
-            _typeTable[6] = typeof(global::System.String);
-            _typeTable[7] = typeof(global::CnBlogsReader.DataModel.ContentModel.Link);
-            _typeTable[8] = typeof(global::System.DateTime);
-            _typeTable[9] = typeof(global::System.ValueType);
-            _typeTable[10] = typeof(global::CnBlogsReader.MainPage);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[12] = typeof(global::CnBlogsReader.ViewModel.MainPageViewModel);
-            _typeTable[13] = typeof(global::CnBlogsReader.TestControlPage);
-            _typeTable[14] = typeof(global::CnBlogsReader.Converters.ImageConverter);
+            _typeTable[5] = typeof(global::CnBlogsReader.WindowsPhoneControls.BlogsListControl);
+            _typeTable[6] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>);
+            _typeTable[7] = typeof(global::System.Collections.ObjectModel.Collection<global::CnBlogsReader.DataModel.ContentModel.Blogger>);
+            _typeTable[8] = typeof(global::CnBlogsReader.DataModel.ContentModel.Blogger);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::CnBlogsReader.DataModel.ContentModel.Link);
+            _typeTable[11] = typeof(global::CnBlogsReader.DataModel.ContentModel.Author);
+            _typeTable[12] = typeof(global::System.DateTime);
+            _typeTable[13] = typeof(global::System.ValueType);
+            _typeTable[14] = typeof(global::CnBlogsReader.MainPage);
+            _typeTable[15] = typeof(global::CnBlogsReader.ViewModel.MainPageViewModel);
+            _typeTable[16] = typeof(global::CnBlogsReader.TestControlPage);
+            _typeTable[17] = typeof(global::CnBlogsReader.Converters.ImageConverter);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -191,22 +197,24 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_BlogsListControl() { return new global::CnBlogsReader.WindowsPhoneControls.BlogsListControl(); }
-        private object Activate_2_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>(); }
-        private object Activate_3_Collection() { return new global::System.Collections.ObjectModel.Collection<global::CnBlogsReader.DataModel.ContentModel.Blogger>(); }
-        private object Activate_5_Blogger() { return new global::CnBlogsReader.DataModel.ContentModel.Blogger(); }
-        private object Activate_7_Link() { return new global::CnBlogsReader.DataModel.ContentModel.Link(); }
-        private object Activate_10_MainPage() { return new global::CnBlogsReader.MainPage(); }
-        private object Activate_12_MainPageViewModel() { return new global::CnBlogsReader.ViewModel.MainPageViewModel(); }
-        private object Activate_13_TestControlPage() { return new global::CnBlogsReader.TestControlPage(); }
-        private object Activate_14_ImageConverter() { return new global::CnBlogsReader.Converters.ImageConverter(); }
-        private void VectorAdd_2_ObservableCollection(object instance, object item)
+        private object Activate_0_BlogDeatil() { return new global::CnBlogsReader.BlogDeatil(); }
+        private object Activate_5_BlogsListControl() { return new global::CnBlogsReader.WindowsPhoneControls.BlogsListControl(); }
+        private object Activate_6_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>(); }
+        private object Activate_7_Collection() { return new global::System.Collections.ObjectModel.Collection<global::CnBlogsReader.DataModel.ContentModel.Blogger>(); }
+        private object Activate_8_Blogger() { return new global::CnBlogsReader.DataModel.ContentModel.Blogger(); }
+        private object Activate_10_Link() { return new global::CnBlogsReader.DataModel.ContentModel.Link(); }
+        private object Activate_11_Author() { return new global::CnBlogsReader.DataModel.ContentModel.Author(); }
+        private object Activate_14_MainPage() { return new global::CnBlogsReader.MainPage(); }
+        private object Activate_15_MainPageViewModel() { return new global::CnBlogsReader.ViewModel.MainPageViewModel(); }
+        private object Activate_16_TestControlPage() { return new global::CnBlogsReader.TestControlPage(); }
+        private object Activate_17_ImageConverter() { return new global::CnBlogsReader.Converters.ImageConverter(); }
+        private void VectorAdd_6_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>)instance;
             var newItem = (global::CnBlogsReader.DataModel.ContentModel.Blogger)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_3_Collection(object instance, object item)
+        private void VectorAdd_7_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>)instance;
             var newItem = (global::CnBlogsReader.DataModel.ContentModel.Blogger)item;
@@ -223,29 +231,26 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  CnBlogsReader.WindowsPhoneControls.BlogsListControl
-                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_0_BlogsListControl;
-                userType.AddMemberName("BlogListSource");
+            case 0:   //  CnBlogsReader.BlogDeatil
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_0_BlogDeatil;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.UserControl
+            case 1:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  System.Collections.ObjectModel.ObservableCollection`1<CnBlogsReader.DataModel.ContentModel.Blogger>
-                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<CnBlogsReader.DataModel.ContentModel.Blogger>"));
-                userType.CollectionAdd = VectorAdd_2_ObservableCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
+            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  System.Collections.ObjectModel.Collection`1<CnBlogsReader.DataModel.ContentModel.Blogger>
+            case 3:   //  CnBlogsReader.ViewModel.BlogDetailViewModel
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_3_Collection;
-                userType.CollectionAdd = VectorAdd_3_Collection;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
@@ -253,70 +258,94 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
                 xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  CnBlogsReader.DataModel.ContentModel.Blogger
+            case 5:   //  CnBlogsReader.WindowsPhoneControls.BlogsListControl
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_5_BlogsListControl;
+                userType.AddMemberName("BlogListSource");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  System.Collections.ObjectModel.ObservableCollection`1<CnBlogsReader.DataModel.ContentModel.Blogger>
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<CnBlogsReader.DataModel.ContentModel.Blogger>"));
+                userType.CollectionAdd = VectorAdd_6_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.Collections.ObjectModel.Collection`1<CnBlogsReader.DataModel.ContentModel.Blogger>
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_5_Blogger;
+                userType.Activator = Activate_7_Collection;
+                userType.CollectionAdd = VectorAdd_7_Collection;
+                xamlType = userType;
+                break;
+
+            case 8:   //  CnBlogsReader.DataModel.ContentModel.Blogger
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_8_Blogger;
                 userType.AddMemberName("ID");
                 userType.AddMemberName("Title");
                 userType.AddMemberName("UpdateTimeString");
                 userType.AddMemberName("Link");
                 userType.AddMemberName("BlogApp");
-                userType.AddMemberName("Avatar");
+                userType.AddMemberName("Author");
                 userType.AddMemberName("PostCount");
                 userType.AddMemberName("UpdateTime");
                 xamlType = userType;
                 break;
 
-            case 6:   //  String
+            case 9:   //  String
                 xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  CnBlogsReader.DataModel.ContentModel.Link
+            case 10:   //  CnBlogsReader.DataModel.ContentModel.Link
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  System.DateTime
+            case 11:   //  CnBlogsReader.DataModel.ContentModel.Author
+                userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  System.DateTime
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 9:   //  System.ValueType
+            case 13:   //  System.ValueType
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 10:   //  CnBlogsReader.MainPage
+            case 14:   //  CnBlogsReader.MainPage
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_MainPage;
+                userType.Activator = Activate_14_MainPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  CnBlogsReader.ViewModel.MainPageViewModel
+            case 15:   //  CnBlogsReader.ViewModel.MainPageViewModel
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  CnBlogsReader.TestControlPage
+            case 16:   //  CnBlogsReader.TestControlPage
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_TestControlPage;
+                userType.Activator = Activate_16_TestControlPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  CnBlogsReader.Converters.ImageConverter
+            case 17:   //  CnBlogsReader.Converters.ImageConverter
                 userType = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_14_ImageConverter;
+                userType.Activator = Activate_17_ImageConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -325,97 +354,107 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
         }
 
 
-        private object get_0_BlogsListControl_BlogListSource(object instance)
+        private object get_0_BlogDeatil_ViewModel(object instance)
+        {
+            var that = (global::CnBlogsReader.BlogDeatil)instance;
+            return that.ViewModel;
+        }
+        private void set_0_BlogDeatil_ViewModel(object instance, object Value)
+        {
+            var that = (global::CnBlogsReader.BlogDeatil)instance;
+            that.ViewModel = (global::CnBlogsReader.ViewModel.BlogDetailViewModel)Value;
+        }
+        private object get_1_BlogsListControl_BlogListSource(object instance)
         {
             var that = (global::CnBlogsReader.WindowsPhoneControls.BlogsListControl)instance;
             return that.BlogListSource;
         }
-        private void set_0_BlogsListControl_BlogListSource(object instance, object Value)
+        private void set_1_BlogsListControl_BlogListSource(object instance, object Value)
         {
             var that = (global::CnBlogsReader.WindowsPhoneControls.BlogsListControl)instance;
             that.BlogListSource = (global::System.Collections.ObjectModel.ObservableCollection<global::CnBlogsReader.DataModel.ContentModel.Blogger>)Value;
         }
-        private object get_1_Blogger_ID(object instance)
+        private object get_2_Blogger_ID(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.ID;
         }
-        private void set_1_Blogger_ID(object instance, object Value)
+        private void set_2_Blogger_ID(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             that.ID = (global::System.String)Value;
         }
-        private object get_2_Blogger_Title(object instance)
+        private object get_3_Blogger_Title(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.Title;
         }
-        private void set_2_Blogger_Title(object instance, object Value)
+        private void set_3_Blogger_Title(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_3_Blogger_UpdateTimeString(object instance)
+        private object get_4_Blogger_UpdateTimeString(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.UpdateTimeString;
         }
-        private void set_3_Blogger_UpdateTimeString(object instance, object Value)
+        private void set_4_Blogger_UpdateTimeString(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             that.UpdateTimeString = (global::System.String)Value;
         }
-        private object get_4_Blogger_Link(object instance)
+        private object get_5_Blogger_Link(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.Link;
         }
-        private void set_4_Blogger_Link(object instance, object Value)
+        private void set_5_Blogger_Link(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             that.Link = (global::CnBlogsReader.DataModel.ContentModel.Link)Value;
         }
-        private object get_5_Blogger_BlogApp(object instance)
+        private object get_6_Blogger_BlogApp(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.BlogApp;
         }
-        private void set_5_Blogger_BlogApp(object instance, object Value)
+        private void set_6_Blogger_BlogApp(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             that.BlogApp = (global::System.String)Value;
         }
-        private object get_6_Blogger_Avatar(object instance)
+        private object get_7_Blogger_Author(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
-            return that.Avatar;
+            return that.Author;
         }
-        private void set_6_Blogger_Avatar(object instance, object Value)
+        private void set_7_Blogger_Author(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
-            that.Avatar = (global::System.String)Value;
+            that.Author = (global::CnBlogsReader.DataModel.ContentModel.Author)Value;
         }
-        private object get_7_Blogger_PostCount(object instance)
+        private object get_8_Blogger_PostCount(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.PostCount;
         }
-        private void set_7_Blogger_PostCount(object instance, object Value)
+        private void set_8_Blogger_PostCount(object instance, object Value)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             that.PostCount = (global::System.String)Value;
         }
-        private object get_8_Blogger_UpdateTime(object instance)
+        private object get_9_Blogger_UpdateTime(object instance)
         {
             var that = (global::CnBlogsReader.DataModel.ContentModel.Blogger)instance;
             return that.UpdateTime;
         }
-        private object get_9_MainPage_ViewModel(object instance)
+        private object get_10_MainPage_ViewModel(object instance)
         {
             var that = (global::CnBlogsReader.MainPage)instance;
             return that.ViewModel;
         }
-        private void set_9_MainPage_ViewModel(object instance, object Value)
+        private void set_10_MainPage_ViewModel(object instance, object Value)
         {
             var that = (global::CnBlogsReader.MainPage)instance;
             that.ViewModel = (global::CnBlogsReader.ViewModel.MainPageViewModel)Value;
@@ -428,66 +467,72 @@ namespace CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "CnBlogsReader.BlogDeatil.ViewModel":
+                userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.BlogDeatil");
+                xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "CnBlogsReader.ViewModel.BlogDetailViewModel");
+                xamlMember.Getter = get_0_BlogDeatil_ViewModel;
+                xamlMember.Setter = set_0_BlogDeatil_ViewModel;
+                break;
             case "CnBlogsReader.WindowsPhoneControls.BlogsListControl.BlogListSource":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.WindowsPhoneControls.BlogsListControl");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "BlogListSource", "System.Collections.ObjectModel.ObservableCollection`1<CnBlogsReader.DataModel.ContentModel.Blogger>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_BlogsListControl_BlogListSource;
-                xamlMember.Setter = set_0_BlogsListControl_BlogListSource;
+                xamlMember.Getter = get_1_BlogsListControl_BlogListSource;
+                xamlMember.Setter = set_1_BlogsListControl_BlogListSource;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.ID":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "ID", "String");
-                xamlMember.Getter = get_1_Blogger_ID;
-                xamlMember.Setter = set_1_Blogger_ID;
+                xamlMember.Getter = get_2_Blogger_ID;
+                xamlMember.Setter = set_2_Blogger_ID;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.Title":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_2_Blogger_Title;
-                xamlMember.Setter = set_2_Blogger_Title;
+                xamlMember.Getter = get_3_Blogger_Title;
+                xamlMember.Setter = set_3_Blogger_Title;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.UpdateTimeString":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "UpdateTimeString", "String");
-                xamlMember.Getter = get_3_Blogger_UpdateTimeString;
-                xamlMember.Setter = set_3_Blogger_UpdateTimeString;
+                xamlMember.Getter = get_4_Blogger_UpdateTimeString;
+                xamlMember.Setter = set_4_Blogger_UpdateTimeString;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.Link":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "Link", "CnBlogsReader.DataModel.ContentModel.Link");
-                xamlMember.Getter = get_4_Blogger_Link;
-                xamlMember.Setter = set_4_Blogger_Link;
+                xamlMember.Getter = get_5_Blogger_Link;
+                xamlMember.Setter = set_5_Blogger_Link;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.BlogApp":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "BlogApp", "String");
-                xamlMember.Getter = get_5_Blogger_BlogApp;
-                xamlMember.Setter = set_5_Blogger_BlogApp;
+                xamlMember.Getter = get_6_Blogger_BlogApp;
+                xamlMember.Setter = set_6_Blogger_BlogApp;
                 break;
-            case "CnBlogsReader.DataModel.ContentModel.Blogger.Avatar":
+            case "CnBlogsReader.DataModel.ContentModel.Blogger.Author":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
-                xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "Avatar", "String");
-                xamlMember.Getter = get_6_Blogger_Avatar;
-                xamlMember.Setter = set_6_Blogger_Avatar;
+                xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "Author", "CnBlogsReader.DataModel.ContentModel.Author");
+                xamlMember.Getter = get_7_Blogger_Author;
+                xamlMember.Setter = set_7_Blogger_Author;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.PostCount":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "PostCount", "String");
-                xamlMember.Getter = get_7_Blogger_PostCount;
-                xamlMember.Setter = set_7_Blogger_PostCount;
+                xamlMember.Getter = get_8_Blogger_PostCount;
+                xamlMember.Setter = set_8_Blogger_PostCount;
                 break;
             case "CnBlogsReader.DataModel.ContentModel.Blogger.UpdateTime":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.DataModel.ContentModel.Blogger");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "UpdateTime", "System.DateTime");
-                xamlMember.Getter = get_8_Blogger_UpdateTime;
+                xamlMember.Getter = get_9_Blogger_UpdateTime;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CnBlogsReader.MainPage.ViewModel":
                 userType = (global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CnBlogsReader.MainPage");
                 xamlMember = new global::CnBlogsReader.CnBlogsReader_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "CnBlogsReader.ViewModel.MainPageViewModel");
-                xamlMember.Getter = get_9_MainPage_ViewModel;
-                xamlMember.Setter = set_9_MainPage_ViewModel;
+                xamlMember.Getter = get_10_MainPage_ViewModel;
+                xamlMember.Setter = set_10_MainPage_ViewModel;
                 break;
             }
             return xamlMember;

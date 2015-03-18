@@ -27,8 +27,11 @@ namespace CnBlogsReader.DataModel.ContentModel
         [XmlElement("blogapp")]
         public string BlogApp { get; set; }
 
-        [XmlElement("avatar")]
-        public string Avatar { get; set; }
+        //[XmlElement("avatar")]
+        //public string Avatar { get; set; }
+
+        [XmlElement("author")]
+        public Author Author { get; set; }
 
         [XmlElement("postcount")]
         public string PostCount { get; set; }

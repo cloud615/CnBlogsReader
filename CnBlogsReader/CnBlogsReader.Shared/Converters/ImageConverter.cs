@@ -16,9 +16,16 @@ namespace CnBlogsReader.Converters
             string href = System.Convert.ToString(value);
             try
             {
-
-                //保存到文件: client.SaveAsFile(fileName);
-                Uri uri = new Uri(href); 
+                Uri uri = null;
+                if (!string.IsNullOrWhiteSpace(href))
+                {
+                    //保存到文件: client.SaveAsFile(fileName);
+                    uri = new Uri(href);
+                }
+                else
+                {
+                    uri = new Uri("ms-appx:///Assets/Logo.100.Blue.png");
+                }
                 BitmapImage bitmapImage = new BitmapImage(uri);
                 return bitmapImage;
             }
